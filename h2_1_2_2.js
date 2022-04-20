@@ -1,8 +1,10 @@
+// Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+
 let age_2 = 18; // Создать переменную “age_2” и присвоить ей значение 18
 let age_3 = 60; // Создать переменную “age_3” и присвоить ей значение 60
 
 function checkAge(age) {
-  if (typeof(age) === "number" && age < age_2) {
+  if (typeof age === "number" && age < age_2) {
     console.log(
       "You don’t have access cause your age is " +
         age +
