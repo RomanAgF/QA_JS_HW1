@@ -1,13 +1,12 @@
 // Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 
-
 let age_2 = 18; // Создать переменную “age_2” и присвоить ей значение 18
 let age_3 = 60; // Создать переменную “age_3” и присвоить ей значение 60
 
 let age = prompt("Your age: ");
 
 function checkAge(age) {
-  if (Number(age) === "number" && age < age_2) {
+  if (typeof age === "number" && age < age_2) {
     console.log(
       "You don’t have access cause your age is " +
         age +
